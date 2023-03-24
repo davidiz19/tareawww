@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display: block;
+    align-items: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px 1fr 200px;
+    grid-gap: 20px;
+    grid-template-areas: "navegacion navegacion"
+                         "aside tarjetas"
+                         "footer footer";
+    background: #d4cfcf;
+    max-width: 1000px;
+    margin:auto;
+                        
+}
+
+.navegacion{
+    grid-area: navegacion;
+    background-image: url(https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-5-3.png);
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+    font-size: 24px;    
+}
+
+.aside{
+    grid-area: aside;
+    background: #f4f1bb;
+}
+
+.aside div{
+    padding: 10px;
+}
+
+.tarjetas{
+
+}
+
+footer{
+    background: #d4cfcf;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px;
+}
+
+.tarjeta{
+    position: relative;
+    display: flex;
+    background: black;
+    align-items: center;
+
+}
+.tarjeta div{
+
+    position: absolute;
+    margin:auto;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+    
+
+}
+
+.texto {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+
+    color: #333;
+  }
+.contexto1
+{
+    margin-top: 10px;
+}
+
+.logo{
+    font-size: 30px;
+}
+
+footer > div{
+    margin-top: 20px;
+    margin-left:20px;
+    font-size: 15px ;
+    color: black;
+
+}
